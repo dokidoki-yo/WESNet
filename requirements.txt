@@ -1,0 +1,8 @@
+torchvision
+opencv-python
+numpy
+Pillow
+visdom
+matplotlib
+Shapely
+thop
