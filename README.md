@@ -1,14 +1,14 @@
 # WESNet(Weakly Supervised Extrinsics Self-Calibration of SVS)
 
 This is the implementation of WESNet using PyTorch. Here is our [paper](https://ieeexplore.ieee.org/document/9693241).
-![]()
+![](https://github.com/dokidoki-yo/WESNet/blob/main/Network_s.pdf)
 
 ## Requirements
 
 For training:
 * CUDA
 * PyTorch
-* * Other requirements (such as visiualization of loss curve)
+* Other requirements (such as visiualization of loss curve)
     `pip install -r requirements.txt`
 
 For data preprocessing:
@@ -17,7 +17,7 @@ For data preprocessing:
     
 ## Dataset Download
 
- Download our surround-view dataset containing original fisheye images from [here] (password:cblf) (https://pan.baidu.com/s/1BxdyM30Nysq7NABBML_Kgg#list/path=%2F), and extract. The labels of the calibration site images consisting of the 2D pixel coordinates and corresponding 3D world coordinates of the selected corners are also provided in 'C_f.zip'.
+ Download our surround-view dataset containing original fisheye images from [here](https://pan.baidu.com/s/1BxdyM30Nysq7NABBML_Kgg#list/path=%2F) (password:cblf), and extract. The labels of the calibration site images consisting of the 2D pixel coordinates and corresponding 3D world coordinates of the selected corners are also provided in 'C_f.zip'.
 
 ## Data Preparation
 * Labels: Before training, make sure that each lable file contains the same number of point pairs, we suggest keeping at least 15 pairs.
@@ -41,4 +41,7 @@ python inference.py --image_path $IMAGE_PATH$ --detector_weights $DETECTOR_WEIGH
 ```
 `IMAGE_PATH` is the directory of testing data generated in data preparation, in which the organization of folders and names of testing images is the same as the training set.
 `DETECTOR_WEIGHTS` is the model of trained weights.
+
+## Demo Video
+See our [project website](https://cslinzhang.github.io/WESNet/WESNet.html) to see some demo videos.
 
