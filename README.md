@@ -1,7 +1,7 @@
 # WESNet(Weakly Supervised Extrinsics Self-Calibration of SVS)
 
 This is the implementation of WESNet using PyTorch. Here is our [paper](https://ieeexplore.ieee.org/document/9693241).
-![](https://github.com/dokidoki-yo/WESNet/blob/main/Network_s.pdf)
+![Network Architecture](https://github.com/dokidoki-yo/WESNet/blob/main/Network_s.pdf)
 
 ## Requirements
 
@@ -30,6 +30,7 @@ python train.py --dataset_directory $TRAIN_DIRECTORY --batch_size $BATCH_SIZE --
 ```
 
 `TRAIN_DIRECTORY` is the directory of training data generated in data preparation.  
+
 `--enable_visdom` is to help visiualize the loss curve in the training process.
 
 View `config.py` for more argument details (num_epochs, learning rate, etc).
@@ -40,6 +41,7 @@ View `config.py` for more argument details (num_epochs, learning rate, etc).
 python inference.py --image_path $IMAGE_PATH$ --detector_weights $DETECTOR_WEIGHTS
 ```
 `IMAGE_PATH` is the directory of testing data generated in data preparation, in which the organization of folders and names of testing images is the same as the training set.
+
 `DETECTOR_WEIGHTS` is the model of trained weights.
 
 ## Demo Video
