@@ -2,7 +2,7 @@
 
 This is the implementation of WESNet using PyTorch. Here is our [paper](https://ieeexplore.ieee.org/document/9693241).
 
-![Network Architecture](https://github.com/dokidoki-yo/WESNet/raw/main/Network_s.pdf)
+![Network Architecture](WESNet.png)
 
 ## Requirements
 
